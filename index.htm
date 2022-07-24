@@ -6,7 +6,7 @@
 		  <!-- inserisci tutti lonk a fonti ext (es bootstrap/css ecc) -->
 		<title>mod@rt</title>
 		<link rel="icon" type="image/x-icon" href="images/favicon.ico">	
-		<link rel="stylesheet" type="text/css" href="Bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css"/> 
 		<script src="https://kit.fontawesome.com/bc3641276e.js" crossorigin="anonymous"></script>
 
@@ -27,7 +27,7 @@
 		    <div class="collapse navbar-collapse" id="mynavbar">
 		      <ul class="navbar-nav me-auto">
 		        <li class="nav-item">
-		          <a class="nav-link" href="index.htm">Home</a>
+		          <a class="nav-link" aria-current="page" href="index.htm">Home</a>
 		        </li>
 		        <li class="nav-item">
 		          <a class="nav-link" href="tempi.htm">Tempi</a>
@@ -48,7 +48,7 @@
 		        </li>
 		      </ul>
 		      <form class="d-flex">
-		      	<input class="form-control" type="text" placeholder="Cerca...">
+		      	<input class="form-control" type="text" placeholder="Cerca..." aria-label="Search">
 		        <button type="button" class="btn me-3"><i class="fa-solid fa-magnifying-glass"></i></button>
 		        <button class="btn btn-dark" type="button"><span class="text-nowrap">accedi</span></button>
 		      </form>
@@ -60,9 +60,9 @@
 			
 		<div id="demo" class="carousel slide" data-bs-ride="carousel">
 			<div class="carousel-indicators">
-			    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-			    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-			    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+			    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+			    <button type="button" data-bs-target="#demo" data-bs-slide-to="1" aria-label="Slide 2"></button>
+			    <button type="button" data-bs-target="#demo" data-bs-slide-to="2" aria-label="Slide 3"></button>
 			</div>
 			<div class="carousel-inner">
 			   	<div class="carousel-item active">
@@ -91,10 +91,10 @@
 			    </div>
 			</div>
 			    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-			    <span class="carousel-control-prev-icon"></span>
+			    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
 			  </button>
 			  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-			    <span class="carousel-control-next-icon"></span>
+			    <span class="carousel-control-next-icon" aria-hidden="true"></span>
 			  </button>
 		</div>
 		<br></br>
