@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <collezione xmlns:dc="http://purl.org/dc/elements/1.1/" xml:id="modart">
+        <item id="bronzino" xml:id="modart-bronzino">
+            <dc:title>Ritratto di giovane uomo con libro</dc:title>
+            <dc:creator>Agnolo di Cosimo (detto Bronzino)</dc:creator>
+             <dc:subject type="classificazione">Ritrattistica; ritratti rinascimentale; dipinti del XVI secolo; ritratti di Bronzino; </dc:subject>
+            <dc:subject type="sistema vestimentario">menswear; farsetto in raso nero; camicia bianca; camicia con collo a balze; cappello; cintura blu; cravatta; braghetta; alette d'oro; anello; </dc:subject>
+            <dc:description xml:lang="it">
+                <img source="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Agnolo_Bronzino_-_Portrait_of_a_Young_Man.jpg/1024px-Agnolo_Bronzino_-_Portrait_of_a_Young_Man.jpg"/>
+                Il <subject>ritratto</subject> di questo giovane uomo venne dipinto da <creator>Agnolo di Cosimo (detto Bronzino)</creator> a <coverage>Firenze</coverage>, <date>tra il 1530 e il 1540</date>. L'identità del modello non è nota, ma deve aver fatto parte della stretta cerchia di amici di <creator>Bronzino</creator>, spesso impegnato a dipingerne i membri con i quali condivideva interessi letterari, ipotesi avvalorata dalla presenza del libro tenuto in mano dal soggetto. Il giovane elegante indossa un <subject>farsetto di raso nero</subject>, con maniche tagliate alla moda, sopra una <subject>camicia bianca con collo a balze</subject>, e con una <subject>cintura blu</subject> brillante. Sia il suo <subject>cappello</subject> che le <subject>cravatte</subject> che sostengono la sua <subject>braghetta</subject> sono decorati con <subject>alette d'oro</subject> e indossa un <subject>anello</subject>.
+            </dc:description> 
+            <dc:date>1540</dc:date>
+            <dc:type>Dipinto</dc:type>
+            <dc:format>olio su tavola; 95,6x74,9 cm</dc:format>
+            <dc:coverage>New York - The Metropolitan Museum of Art</dc:coverage>
+            <dc:identifier type="permalink">https://www.metmuseum.org/art/collection/search/435802</dc:identifier>
+            <dc:identifier type="MET-inventario">29.100.16</dc:identifier>
+            <dc:relation>Il libro del Cortegiano - Baldassarre Castiglione</dc:relation>
+        </item>
+    </collezione>

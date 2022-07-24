@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+
+		  <!-- inserisci tutti lonk a fonti ext (es bootstrap/css ecc) -->
+		<title>mod@rt</title>	
+		<link rel="icon" type="image/x-icon" href="images/favicon.ico">	
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script src="https://kit.fontawesome.com/bc3641276e.js" crossorigin="anonymous"></script>
+		<script>
+			function imageZoom(imgID, resultID) {
+		  var img, lens, result, cx, cy;
+		  img = document.getElementById(imgID);
+		  result = document.getElementById(resultID);
+		  /*create lens:*/
+		  lens = document.createElement("DIV");
+		  lens.setAttribute("class", "img-zoom-lens");
+		  /*insert lens:*/
+		  img.parentElement.insertBefore(lens, img);
+		  /*calculate the ratio between result DIV and lens:*/
+		  cx = result.offsetWidth / lens.offsetWidth;
+		  cy = result.offsetHeight / lens.offsetHeight;
+		  /*set background properties for the result DIV:*/
+		  result.style.backgroundImage = "url('" + img.src + "')";
+		  result.style.backgroundSize = (img.width * cx) + "px " + (img.height * cy) + "px";
+		  /*execute a function when someone moves the cursor over the image, or the lens:*/
+		  lens.addEventListener("mousemove", moveLens);
+		  img.addEventListener("mousemove", moveLens);
+		  /*and also for touch screens:*/
+		  lens.addEventListener("touchmove", moveLens);
+		  img.addEventListener("touchmove", moveLens);
+  		function moveLens(e) {
+	    var pos, x, y;
+	    /*prevent any other actions that may occur when moving over the image:*/
+	    e.preventDefault();
+	    /*get the cursor's x and y positions:*/
+	    pos = getCursorPos(e);
+	    /*calculate the position of the lens:*/
+	    x = pos.x - (lens.offsetWidth / 2);
+	    y = pos.y - (lens.offsetHeight / 2);
+	    /*prevent the lens from being positioned outside the image:*/
+	    if (x > img.width - lens.offsetWidth) {x = img.width - lens.offsetWidth;}
+	    if (x < 0) {x = 0;}
+	    if (y > img.height - lens.offsetHeight) {y = img.height - lens.offsetHeight;}
+	    if (y < 0) {y = 0;}
+	    /*set the position of the lens:*/
+	    lens.style.left = x + "px";
+	    lens.style.top = y + "px";
+	    /*display what the lens "sees":*/
+	    result.style.backgroundPosition = "-" + (x * cx) + "px -" + (y * cy) + "px";
+	  }
+	  function getCursorPos(e) {
+	    var a, x = 0, y = 0;
+	    e = e || window.event;
+	    /*get the x and y positions of the image:*/
+	    a = img.getBoundingClientRect();
+	    /*calculate the cursor's x and y coordinates, relative to the image:*/
+	    x = e.pageX - a.left;
+	    y = e.pageY - a.top;
+	    /*consider any page scrolling:*/
+	    x = x - window.pageXOffset;
+	    y = y - window.pageYOffset;
+	    return {x : x, y : y};
+	  }
+		}
+		</script>
+	</head>
+	
+	<body>
+		<span id="top"></span>
+		
+		<header>
+			<h1>mod@rt</h1>
+		</header>
+
+		<nav class="navbar navbar-expand-sm navbar-light bg-info sticky-top">
+		  <div class="container-fluid">
+		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+		      <span class="navbar-toggler-icon"></span>
+		    </button>
+		    <div class="collapse navbar-collapse" id="mynavbar">
+		      <ul class="navbar-nav me-auto">
+		        <li class="nav-item">
+		          <a class="nav-link" href="index.htm">Home</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="tempi.htm">Tempi</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="#">Luoghi</a>
+		        </li>
+		         <li class="nav-item">
+		          <a class="nav-link" href="#">Generi</a>
+		        </li>
+		        <li class="nav-item dropdown">
+		        	<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Categorie</a>
+		          <ul class="dropdown-menu">
+		            <li><a class="dropdown-item" href="abiti.htm">Abiti</a></li>
+		            <li><a class="dropdown-item" href="#">Calzature</a></li>
+		            <li><a class="dropdown-item" href="#">Accessori</a></li>
+		          </ul>
+		        </li>
+		      </ul>
+		      <form class="d-flex">
+		      	<input class="form-control" type="text" placeholder="Cerca...">
+		        <button type="button" class="btn me-3"><i class="fa-solid fa-magnifying-glass"></i></button>
+		        <button class="btn btn-dark" type="button"><span class="text-nowrap">accedi</span></button>
+		      </form>
+		    </div>
+		  </div>
+		</nav>
+			
+    <div class="container-fluid pt-3">
+	    <nav aria-label="breadcrumb">
+	      <ol class="breadcrumb">
+	        <li class="breadcrumb-item"><a href="index.htm" class="breadcrumb-link text-dark">Home</a></li>
+          <li class="breadcrumb-item"><a href="#" class="breadcrumb-link text-dark">Categorie</a></li>
+          <li class="breadcrumb-item"><a href="abiti.htm" class="breadcrumb-link text-dark">Abiti</a></li>
+          <li class="breadcrumb-item text-dark" aria-current="page"><b>Ritratto di giovane uomo con libro</b></li>
+	      </ol>
+	    </nav>
+		</div>
+      
+        <div class="container-fluid">
+         <div class="container-fluid">
+           <div class="row"></div> 
+
+           	<div class="contianer-fluid">
+	            <div class="row">
+	              	<div class="col-1">
+	              	</div>
+	              	<div class="col-8">
+		              	<div>
+		              		<h1><span class="text-center" class="text-nowrap"><b>Ritratto di giovane uomo con libro</b></span></h1>
+		              		<p>di <i>Agnolo di Cosimo</i> (detto <i>Bronzino</i>)</p>
+		              		<hr>
+		              		<p class="text-abstract">Il ritratto di questo giovane uomo venne dipinto da Agnolo di Cosimo (detto Bronzino) a Firenze, tra il 1530 e il 1540. L'identità del modello non è nota, ma deve aver fatto parte della stretta cerchia di amici di Bronzino, spesso impegnato a dipingerne i membri con i quali condivideva interessi letterari, ipotesi avvalorata dalla presenza del libro tenuto in mano dal soggetto. Il giovane elegante indossa un farsetto di raso nero, con maniche tagliate alla moda, sopra una camicia bianca con collo a balze, e con una cintura blu brillante. Sia il suo cappello che le cravatte che sostengono la sua braghetta sono decorati con alette d'oro e indossa un anello.</p>
+		              	</div>
+	              		<hr>
+	              		
+	              		<div class="item-content">
+	              			
+	              			<div class="row">
+		              			<div class="col-8">
+			              			<div class="img-zoom-container">
+			              				<img id="myimage" class="img-picture" src="images/Bronzino_giovane_uomo.jpg" alt="Ritratto di giovane uomo con libro - Bronzino">
+			              			</div>
+			              		</div>
+		              			<div class="col-4">
+									<div style="width:100%" class="text-center">
+										<span class="text-danger"><i class="fa-solid fa-magnifying-glass-plus"></i> Guarda da vicino...</span>
+									</div>
+									<hr>
+									<div id="myresult" class="img-zoom-result"></div></br>
+								</div>
+							</div>
+
+	              		</div>
+
+	           			</div>
+	           			<div class="col-1">
+	              		</div>
+					  			<div class="col-2">
+										<div style="width:100%" class="badge bg-warning">
+											<h5>Item correlati</h5>
+										</div>
+										<hr>
+										<div style="width:100%">
+											<ul class="no-bullets">
+										  	<li><a href="item-cortegiano.htm"><img src="images/thumb-cortegiano-frontespizio.jpg" style="width:100%" class="img-thumbnail"></a></li>
+										    <li><a href="#"><img src="images/thumb-sposi-lotto.jpg" style="width:100%" class="img-thumbnail"></a></li>
+										    <li><a href="#"><img src="images/thumb-donna-bronzino.jpg" style="width:100%" class="img-thumbnail"></a></li>
+										  </ul>  									
+										</div>
+						
+	              		
+	            </div>
+						</div>
+		
+					<br></br>
+				<div class="row">
+					<table class="table">
+                 <thead>
+                 </thead>
+                 <tbody>
+                    <tr>
+                       <th scope="row"></th>
+                       <td>Titolo: </td>
+                       <td><b>Ritratto di giovane uomo con libro</b></td>
+                       <td></td>
+                    </tr>
+                    <tr>
+                       <th scope="row"></th>
+                       <td>Autore:</td>
+                       <td><a href="http://viaf.org/viaf/106963584"><b>Agnolo di Cosimo (detto Bronzino)</b></a></td>
+                    </tr>
+                    <tr>
+                       <th scope="row"></th>
+                       <td>Data:</td>
+                       <td><b><a href="tempi.htm">1540</a></b></td>
+                    </tr>
+                    <tr>
+                       <th scope="row"></th>
+                       <td>Luogo di conservazione:</td>
+                       <td><a href="https://www.geonames.org/5126698/metropolitan-museum-of-art.html"><b>New York - The Metropolitan Museum of Art</b></a></td>
+                    </tr>
+                    <tr>
+                       <th scope="row"></th>
+                       <td>Genere item:</td>
+                       <td><b><a href="#">Menswear</a></b></td>
+                    </tr>
+                    <tr>
+                       <th scope="row"></th>
+                       <td>Categoria Item:</td>
+                       <td><b><a href="abiti.htm">Abiti</a></b></td>
+                       <td></td>
+                   </tr>
+                   <tr>
+                       <th scope="row"></th>
+                       <td>Tipologia Item:</td>
+                       <td><b>Dipinto</b></td>
+                       <td></td>
+                  </tr>
+                  <tr>
+                       <th scope="row"></th>
+                       <td>Tecnica:</td>
+                       <td><b>Olio su tavola</b></td>
+                       <td></td>
+                 </tr>
+                 <tr>
+                       <th scope="row"></th>
+                       <td>Dimensioni</td>
+                       <td><b>95,6x74,9 cm</b>
+                </tr>
+                <tr>
+                       <th scope="row"></th>
+                       <td>Nemero di Inventario:</td>
+                       <td><b>29.100.16</b></td>
+                    </tr>   
+                <tr>
+                     		<th scope="row"></th>
+                       	<td><span class="badge bg-danger"><a href="xml/XML-DC-bronzino.xml" class="text-light">File XML/DC</a></span></td>
+                </tr>
+                </tbody>
+              </table>
+	         </div>
+	       </br>
+
+ 
+	           
+		<footer>
+       		<div class="container-fluid bg-info p-4">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 bg-info p-4">
+							<div class="row g-0">
+								<div class="col-md-6 bg-info">
+									<h5>mod@rt: sguardi sulla moda nell'arte.</h5>
+									<ul class="no-bullets">
+										<li>Sito realizzato da <b>Giulia Storari</b></li>
+										<li>Corso Digital Humanities (2021-2022)</li>
+										<li>Dipartimento Arti Visive - Univerisità di Bologna</li>
+
+									</ul>  	
+								</div>	
+								<div class="col-md-6 bg-info">
+									<h5>Contatti</h5>
+									<ul class="no-bullets">
+										<li><i class="fa-solid fa-globe"></i><a href="url-github" class="text-body"> url-github</a></li>
+									  	<li><i class="fa-solid fa-envelope"></i><a href="mailto:pippo@pippo.com" class="text-body"> info@modart.edu.it</a></li>
+									 	<li><i class="fa-solid fa-phone"></i> +39 555.001.789</li>
+									 	<li><a href="#" class="text-body"><i class="fa-brands fa-facebook-square"></i></a> <a href="#" class="text-body"><i class="fa-brands fa-instagram-square"></i></a> <a href="#" class="text-body"><i class="fa-brands fa-twitter-square"></i></a></li>
+									</ul>   
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>	
+   		</footer>
+
+<script>
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+<script>
+imageZoom("myimage", "myresult"); 
+</script>
+
+		<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+	</body>
+</html>

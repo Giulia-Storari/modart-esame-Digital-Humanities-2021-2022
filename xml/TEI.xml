@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>Il Libro del Cortegiano</title>
+				<author>Baldassarre Castiglione</author>
+				<respStmt>
+					<resp>editor</resp>
+					<name xml:id="GS">Giulia Storari</name>
+					</respStmt>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Università degli studi di Bologna, Dipartimento Arti Visive</publisher>
+				<adress>Bologna</adress>
+				<aviability>Questa testo è liberamente consultabile</aviability>	
+			</publicationStmt>
+			<sourceDesc>
+				<bibl>
+					<title>Libro del Cortegiano</title>
+					<author>Baldassarre Castiglione</author>
+					<date>1981</date>
+					<publisher>Garzanti</publisher>
+					<editor>Amedeo Quondam</editor>
+				</bibl>	
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<projectDesc>
+				<p>Il testo si presenta come testimonianza di elementi caratteristici del sistema vestimentario, in particolare del primo XVI secolo riguardanti la figura maschile del cortigiano.</p>
+			</projectDesc>
+		</encodingDesc>
+		<profileDesc>
+			<listCh type="characters-dialogo">
+				<charachter xml:id="MF">
+					<chName>messer Federico</chName>
+				</charachter>
+				<charachter xml:id="MCG">
+					<chName>messer Cesare Gonzaga</chName>
+				</charachter>
+				<charachter xml:id="PB">
+					<chName>Pietro Bembo</chName>
+				</charachter>
+				<charachter xml:id="DU">
+					<chName>signora Duchessa</chName>
+				</charachter>
+			</listCh>	
+			<langUsage>
+				<language ident="it">Italiano</language>
+			</langUsage>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="it">
+		<body>
+			<div type="Capitolo"> 
+				<head>XXVII</head>	
+				<sp WHO="#mFede">
+					<speaker>messer Federico</speaker>
+					<p>Ma non voglio che noi entriamo in ragionamenti di fastidio; però ben sarà dir degli abiti del nostro cortegiano; i quali io estimo che, pur che non siano fuor della consuetudine, né contrari alla professione, possano per lo resto tutti star bene, pur che satisfacciano a chi gli porta. Vero è ch'io per me amerei che non fossero estremi in alcuna parte, come talor sol essere il franzese in troppo grandezza e 'l tedesco in troppo piccolezza, ma come sono e l'uno e l'altro corretti e ridutti in meglior forma dagli Italiani. Piacemi ancor sempre che tendano un poco più al grave e riposato, che al vano; però parmi che maggior grazia abbia nei vestimenti il <term>color nero</term>, che alcun altro; e se pur non è nero, che almen tenda al <term>scuro</term>; e questo intendo del vestir ordinario, perché non è dubbio che sopra l'arme più si convengan <term>colori aperti ed allegri</term>, ed ancor gli <term>abiti festivi</term>, <term>trinzati</term>, pomposi e superbi. Medesimamente nei spettaculi publici di feste, di giochi, di mascare e di tai cose; perché così divisati portan seco una certa vivezza ed alacrità, che in vero ben s'accompagna con l'arme e giochi; ma nel resto vorrei che mostrassino quel riposo che molto serva la nazion spagnola, perché le cose estrinseche spesso fan testimonio delle intrinseche.</p>
+				</sp>
+				<sp WHO="#mCesGon">		
+					<speaker>messer Cesare Gonzaga</speaker>
+					<p>Questo a me daria poca noia perché, se un gentilom nelle altre cose vale, il vestire non gli accresce né scema mai riputazione.</p>
+				</sp>
+				<sp WHO="#mFed">	
+					<speaker>messer Federico</speaker>
+					 <p>Voi dite il vero. Pur qual è di noi che, vedendo passeggiar un gentilomo con una robba addossoc quartata di diversi colori, o vero con tante <term>stringhette</term> e <term>fettuzze annodate</term> e <term>fregi traversati</term>, non lo tenesse per pazzo o per buffone?</p>
+				</sp>	 
+				<sp WHO="#PB">
+					<speker>Pietro Bembo</speker>
+					<p>Né pazzo, né buffone sarebbe costui tenuto da chi fosse qualche tempo vivuto nella Lombardia perché così vanno tutti.</p>
+				</sp>
+				<sp WHO="#Duch">
+					<speaker>signora Duchessa</speaker>
+					<p>Adunque, se così vanno tutti, opporre non se gli dee per vizio, essendo a loro questo abito tanto conveniente e proprio quanto ai Veneziani il portar le <term>maniche a cómeo</term> ed ai Fiorentini il <term>capuzzo</term>.</p>
+				</sp>
+				<sp WHO="#mFed">
+					<speaker>messer Federico</speaker>
+					<p>Non parlo io più della Lombardia che degli altri lochi, perché d'ogni nazion se ne trovano e di sciocchi e d'avveduti. Ma per dir ciò che mi par d'importanzia nel vestire, voglio che 'l nostro cortegiano in tutto l'abito sia pulito e delicato ed abbia una certa conformità di <term>modesta attillatura</term>, ma non però di manera feminile o vana, né più in una cosa che nell'altra, come molti ne vedemo, che pongon tanto studio nella <term>capigliara</term>, che si scordano il resto; altri fan professione de denti, altri di barba, altri di <term>borzachini</term>, altri di <term>berrette</term>, altri di <term>cuffie</term>; e così intervien che quelle poche cose più culte paiono lor prestate, e tutte l'altre che sono sciocchissime si conoscono per le loro. E questo tal costume voglio che fugga il nostro cortegiano, per mio consiglio; aggiungendovi ancor che debba fra se stesso deliberar ciò che vol parere e di quella sorte che desidera esser estimato, della medesima vestirsi, e far che gli abiti lo aiutino ad esser tenuto per tale ancor da quelli che non l'odono parlare, né veggono far operazione alcuna.</p>
+				</sp>	
+			</div>
+		</body>
+	</text>
+</TEI>

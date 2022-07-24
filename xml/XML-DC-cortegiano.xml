@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <collezione xmlns:dc="http://purl.org/dc/elements/1.1/" xml:id="modart">
+        <item id="cortegiano" xml:id="modart-cortegiano">
+            <dc:title>Il Libro del Cortegiano [II, XXVI-XXVII]</dc:title>
+            <dc:creator>Baldassarre Castiglione</dc:creator>
+            <dc:subject type="classificaizione">Trattatistica; Letteratura del XVI secolo; Trattati rinasicmentali</dc:subject>
+            <dc:description xml:lang="it">
+                Il <title>Cortegiano</title> o, più propriamente, <title>Il libro del Cortegiano</title>, è un trattato scritto da <creator>Baldassarre Castiglione</creator> <date>tra il 1513 e il 1524</date>, ma pubblicato definitivamente nel <date>1528</date>, poco prima della sua morte. Baldassare trasse l'ispirazione per il suo trattato dalla sua esperienza come cortigiano alla corte di Urbino. Il libro si presenta come un <type>dialogo</type> in <format>quattro libri</format>, ognuno incentrato su un argomento differente, ma sempre in linea con la tematica generale della <subject>“costruzione” del perfetto uomo di palazzo</subject>. Nel libro II è trattato il tema dell’<subject>utilizzo delle competenze acquisite dal cortigiano</subject>, una delle quali, presentata nel capitolo XVII riguardo la scelta dell'<subject>abbigliamento</subject> a lui più adatto.
+            </dc:description> 
+            <dc:publisher type="ed-princeps">Aldo Manuzio</dc:publisher>
+            <dc:publisher type="ed-item">Garzanti</dc:publisher>
+            <dc:contributor type="introduzione">Amedeo Quondam</dc:contributor>
+            <dc:date type="ed-princeps">1528</dc:date>
+            <dc:date type="ed-item">1981</dc:date>
+            <dc:type>Trattato</dc:type>
+            <dc:type>Dialogo</dc:type>
+            <dc:format>Materiale a stampa</dc:format>
+            <dc:identifier>ISBN:978-88-11-36260-9</dc:identifier>
+            <dc:source>Il Libro del Cortegiano</dc:source>
+            <dc:language>Italiano</dc:language>
+            <dc:relation type="ed-book-cover">Ritratto di giovane uomo con libro - Bronzino</dc:relation>
+            <dc:coverage>Italia</dc:coverage>
+        </item>
+    </collezione>

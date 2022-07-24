@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+
+		  <!-- inserisci tutti lonk a fonti ext (es bootstrap/css ecc) -->
+		<title>mod@rt</title>	
+		<link rel="icon" type="image/x-icon" href="images/favicon.ico">	
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script src="https://kit.fontawesome.com/bc3641276e.js" crossorigin="anonymous"></script>
+	</head>
+	
+	<body>
+		<span id="top"></span>
+		
+		<header>
+			<h1>mod@rt</h1>
+		</header>
+
+		<nav class="navbar navbar-expand-sm navbar-light bg-info sticky-top">
+		  <div class="container-fluid">
+		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+		      <span class="navbar-toggler-icon"></span>
+		    </button>
+		    <div class="collapse navbar-collapse" id="mynavbar">
+		      <ul class="navbar-nav me-auto">
+		        <li class="nav-item">
+		          <a class="nav-link" href="index.htm">Home</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="tempi.htm">Tempi</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="#">Luoghi</a>
+		        </li>
+		         <li class="nav-item">
+		          <a class="nav-link" href="#">Generi</a>
+		        </li>
+		        <li class="nav-item dropdown">
+		        	<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Categorie</a>
+		          <ul class="dropdown-menu">
+		            <li><a class="dropdown-item" href="abiti.htm">Abiti</a></li>
+		            <li><a class="dropdown-item" href="#">Calzature</a></li>
+		            <li><a class="dropdown-item" href="#">Accessori</a></li>
+		          </ul>
+		        </li>
+		      </ul>
+		      <form class="d-flex">
+		      	<input class="form-control" type="text" placeholder="Cerca...">
+		        <button type="button" class="btn me-3"><i class="fa-solid fa-magnifying-glass"></i></button>
+		        <button class="btn btn-dark" type="button"><span class="text-nowrap">accedi</span></button>
+		      </form>
+		    </div>
+		  </div>
+		</nav>
+
+			
+		<div class="container-fluid pt-3">
+	       <nav aria-label="breadcrumb">
+	          <ol class="breadcrumb">
+	            <li class="breadcrumb-item"><a href="index.htm" class="breadcrumb-link text-dark">Home</a></li>
+	            <li class="breadcrumb-item"><a href="#" class="breadcrumb-link text-dark">Categorie</a></li>
+	            <li class="breadcrumb-item text-dark" aria-current="page"><b>Abiti</b></li>
+	          </ol>
+	        </nav>
+		</div>
+
+		<div class="container-fluid">
+				<ul class="nav nav-tabs">
+			    	<li class="nav-item">
+			     		 <a class="nav-link active" href="#">Abiti</a>
+			    	</li>
+			   		<li class="nav-item">
+			      		<a class="nav-link" href="#">Calzature</a>
+			    	</li>
+			    	<li class="nav-item">
+						<a class="nav-link" href="#">Accessori</a>
+			    	</li>
+			  	</ul> 
+		</div>
+		<div class="container-fluid">
+			<div class="header">
+			<img src="images/header-abiti.jpg" alt="abiti" style="width:100%;">
+				<div class="header-text-block">
+					<h1>abiti</h1>
+				</div>
+			</div>	
+		</div>		
+
+		<div class="container-fluid p-4">
+			<div class="row">
+				<div class="col-12 p-4">
+					<div class="row">
+						<div class="col-md-2">
+							 	<div class="container mt-3">
+								  <h6>Tipologia Item</h6>
+								  <form action="/action_page.php">
+								  	<div class="form-check">
+								      <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something" checked>
+								      <label class="form-check-label" for="check1">Qualsiasi</label>
+								    </div>
+								    <div class="form-check">
+								      <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">
+								      <label class="form-check-label" for="check1">Dipinto</label>
+								    </div>
+								    <div class="form-check">
+								      <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">
+								      <label class="form-check-label" for="check1">Oggetto</label>
+								    </div>
+								    <div class="form-check">
+								      <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">
+								      <label class="form-check-label" for="check1">Video</label>
+								    </div>
+								    <div class="form-check">
+								      <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">
+								      <label class="form-check-label" for="check1">Materiale a stampa</label>
+								    </div>
+								  </form>
+								</div>
+
+								<div class="container mt-3">
+								  <h6>Tempi</h6>
+								  <form action="/action_page.php">
+								    <div class="form-check">
+								      <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">
+								      <label class="form-check-label" for="check1">Qualsiasi</label>
+								    </div>
+								    <div class="form-check">
+								      <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">
+								      <label class="form-check-label" for="check1">1400-1450</label>
+								    </div>
+								    <div class="form-check">
+								      <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something" checked>
+								      <label class="form-check-label" for="check1">1451-1500</label>
+								    </div>
+								    <div class="form-check">
+								      <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">
+								      <label class="form-check-label" for="check1">1501-1550</label>
+								    </div>
+								  </form>
+								</div>
+
+								<div class="container mt-3">
+								  <h6>Luoghi</h6>
+								  <form action="/action_page.php">
+								    <div class="form-check">
+								      <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">
+								      <label class="form-check-label" for="check1">Qualsiasi</label>
+								    </div>
+								    <div class="form-check">
+								      <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something" checked>
+								      <label class="form-check-label" for="check1">Italia</label>
+								    </div>
+								    <div class="form-check">
+								      <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">
+								      <label class="form-check-label" for="check1">Germania</label>
+								    </div>
+								    <div class="form-check">
+								      <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">
+								      <label class="form-check-label" for="check1">Spagna</label>
+								    </div>
+								  </form>
+								</div>
+
+								<div class="container mt-3">
+								  <h6>Genere</h6>
+								  <form action="/action_page.php">
+								  	<div class="form-check">
+								      <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something" checked>
+								      <label class="form-check-label" for="check1">Qualsiasi</label>
+								    </div>
+								    <div class="form-check">
+								      <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">
+								      <label class="form-check-label" for="check1">Womenswear</label>
+								    </div>
+								    <div class="form-check">
+								      <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">
+								      <label class="form-check-label" for="check1">Menswear</label>
+								    </div>
+								  </form>
+								</div>
+						</div>	
+						<div class="col-md-8">
+						  	<div class="container">
+					  			<div class="row">
+					  				<div class="col-12">
+					  						<div class="row">													
+												<div class="col-4 container mt-3">
+													<div class="card" style="width:250px">
+									   					<img src="images/thumb-gentiluomo-bronzino.jpg" alt="gentiluomo bronzino" style="width:100%">
+									   					<div class="thumb-icon-light"><i class="fa-solid fa-palette"></i></div>
+									    				<div class="card-body">
+													      	<h4 class="card-title">Ritratto di giovane uomo con libro</h4>
+													      	<p class="card-text">Agnolo di Cosimo (detto Bronzino) - 1540</p>
+									      					<a href="item-bronzino.htm" class="btn btn-info">Visualizza Item</a>
+									    				</div>
+														</div>
+													</div>	
+			  									<div class="col-4 container mt-3">
+													<div class="card" style="width:250px">
+									   					<img src="images/thumb-cortegiano-frontespizio.jpg" alt="cortegiano frontespizio" style="width:100%">
+									   					<div class="thumb-icon-dark"><i class="fa-solid fa-file-lines"></i></div>
+									    				<div class="card-body">
+													      	<h4 class="card-title">Il Libro del Cortegiano [Libro II, cap XXVII]</h4>
+													      	<p class="card-text">Baldassarre Castiglione - 1528</p>
+									      					<a href="item-cortegiano.htm" class="btn btn-info">Visualizza Item</a>
+									    				</div>
+														</div>
+													</div>
+													<div class="col-4 container mt-3">
+													<div class="card" style="width:250px">
+									   					<img src="images/thumb-abito-maschile.jpg" alt="abito maschile" style="width:100%">
+									   					<div class="thumb-icon-dark"><i class="fa-solid fa-shirt"></i></div>
+									    				<div class="card-body">
+													      	<h4 class="card-title">Abito funebre di don Grazia de' Medici</h4>
+													      	<p class="card-text">Giubbone con braconi e cappotto- 1526</p>
+									      					<a href="#" class="btn btn-info">Visualizza Item</a>
+									    				</div>
+														</div>
+													</div>
+			  								</div>
+									</div>
+								</div>
+								<div class="row">
+					  				<div class="col-12">
+					  						<div class="row">
+												<div class="col-4 container mt-3">
+													<div class="card" style="width:250px">
+									   					<img src="images/thumb-video-bookoffashion.jpg" alt="video first book of fashion" style="width:100%">
+									   					<div class="thumb-icon-light"><i class="fa-solid fa-video"></i></div>
+									    				<div class="card-body">
+													      	<h4 class="card-title">The first book of fashion</h4>
+													      	<p class="card-text">La ricostruzione di un abito tratto da ritratti rinascimentali (video) - Cambridge University, 2013</p>
+									      					<a href="#" class="btn btn-info">Visualizza Item</a>
+									    				</div>
+													</div>
+												</div>	
+			  									<div class="col-4 container mt-3">
+													<div class="card" style="width:250px">
+									   					<img src="images/thumb-Bella-Nani-Veronese.jpg" alt="bella nani veronese" style="width:100%">
+									   					<div class="thumb-icon-light"><i class="fa-solid fa-palette"></i></div>
+									    				<div class="card-body">
+													      	<h4 class="card-title">La Bella Nani</h4>
+													      	<p class="card-text">Paolo Caliari (detto Veronese) - 1560</p>
+									      					<a href="#" class="btn btn-info">Visualizza Item</a>
+									    				</div>
+													</div>
+												</div>
+												<div class="col-4 container mt-3">
+													<div class="card" style="width:250px">
+									   					<img src="images/thumb-dame-Durer.jpg" alt="dame durer" style="width:100%">
+									   					<div class="thumb-icon-dark"><i class="fa-solid fa-palette"></i></div>
+									    				<div class="card-body">
+													      	<h4 class="card-title">Dama veneziana e dama di Norimberga</h4>
+													      	<p class="card-text">Albrecht Dürer - 1495</p>
+									      					<a href="#" class="btn btn-info">Visualizza Item</a>
+									    				</div>
+													</div>
+												</div>	
+			  								</div>		
+									</div>
+								</div>
+								<div class="row">
+						  			<div class="col-12">
+					  					<div class="row">
+											<div class="col-4 container mt-3">
+													<div class="card" style="width:250px">
+									   					<img src="images/thumb-habiti-vecellio.jpg" alt="habiti vecellio" style="width:100%">
+									   					<div class="thumb-icon-light"><i class="fa-solid fa-file-lines"></i></div>
+									    				<div class="card-body">
+													      	<h4 class="card-title">De gli habiti antichi et moderni di diverse parti del mondo</h4>
+													      	<p class="card-text">Cesare Vecellio - 1590</p>
+									      					<a href="#" class="btn btn-info">Visualizza Item</a>
+									    				</div>
+													</div>
+											</div>	
+			  								<div class="col-4 container mt-3">
+													<div class="card" style="width:250px">
+									   					<img src="images/thumb-sfrorza-depretis.jpg" alt="sfornza de pretis" style="width:100%">
+									   					<div class="thumb-icon-light"><i class="fa-solid fa-palette"></i></div>
+									    				<div class="card-body">
+													      	<h4 class="card-title">Ritratto di Bianca Maria Sforza</h4>
+													      	<p class="card-text">Ambrogio De Pretis - 1493</p>
+									      					<a href="#" class="btn btn-info">Visualizza Item</a>
+									    				</div>
+													</div>
+											</div>
+											<div class="col-4 container mt-3">
+													<div class="card" style="width:250px">
+									   					<img src="images/thumb-sposi-lotto.jpg" alt="sposi lotto" style="width:100%">
+									   					<div class="thumb-icon-light"><i class="fa-solid fa-palette"></i></div>
+									    				<div class="card-body">
+													      	<h4 class="card-title">Marsilio Cassotti e la sua sposa Faustina</h4>
+													      	<p class="card-text">Lorenzo Lotto - 1523</p>
+									      					<a href="#" class="btn btn-info">Visualizza Item</a>
+									    				</div>
+													</div>
+											</div>		
+			  							</div>		
+									</div>	
+								</div>
+							</div>
+						</div>
+						<div class="col-md-2 pt-3">
+							<div style="width:100%" class="badge bg-warning">
+								<h5>Approfondimenti</h5>
+							</div>
+							<hr>
+							<div class="card" style="width:100%">
+								<img class="card-img-top" src="images/thumb-aside-palazzo-pitti-museo-moda-costume.jpg" alt="Museo della moda e del costume - Palazzo Pitti">
+								<div class="card-body">
+									<h4 class="card-title">Museo della moda e del costume</h4>
+									<p class="card-text"><i>Palazzo Pitti (FI)</i></br>Fondato nel 1983, costituisce il primo museo statale italiano dedicato alla storia della moda e alla sua valenza sociale.</p>
+									<a href="https://www.uffizi.it/palazzo-pitti/museo-della-moda-e-del-costume" target="_blank" class="btn btn-secondary">Vai al sito</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>		
+		</div>
+
+		<ul class="pagination justify-content-center">
+		   	<li class="page-item"><a class="page-link" href="javascript:void(0);">Previous</a></li>
+		    <li class="page-item active"><a class="page-link" href="javascript:void(0);">1</a></li>
+		    <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+		    <li class="page-item"><a class="page-link" href="javascript:void(0);">3</a></li>
+		    <li class="page-item"><a class="page-link" href="javascript:void(0);">Next</a></li>
+		</ul>	
+
+
+		<footer>
+       		<div class="container-fluid bg-info p-4">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 bg-info p-4">
+							<div class="row g-0">
+								<div class="col-md-6 bg-info">
+									<h5>mod@rt: sguardi sulla moda nell'arte.</h5>
+									<ul class="no-bullets">
+										<li>Sito realizzato da <b>Giulia Storari</b></li>
+										<li>Corso Digital Humanities (2021-2022)</li>
+										<li>Dipartimento Arti Visive - Univerisità di Bologna</li>
+
+									</ul>  	
+								</div>	
+								<div class="col-md-6 bg-info">
+									<h5>Contatti</h5>
+									<ul class="no-bullets">
+										<li><i class="fa-solid fa-globe"></i><a href="url-github" class="text-body"> url-github</a></li>
+									  	<li><i class="fa-solid fa-envelope"></i><a href="mailto:pippo@pippo.com" class="text-body"> info@modart.edu.it</a></li>
+									 	<li><i class="fa-solid fa-phone"></i> +39 555.001.789</li>
+									 	<li><a href="#" class="text-body"><i class="fa-brands fa-facebook-square"></i></a> <a href="#" class="text-body"><i class="fa-brands fa-instagram-square"></i></a> <a href="#" class="text-body"><i class="fa-brands fa-twitter-square"></i></a></li>
+									</ul>   
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>	
+   		</footer>
+
+		<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>
