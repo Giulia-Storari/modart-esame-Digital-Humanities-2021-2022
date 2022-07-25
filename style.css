@@ -1,0 +1,262 @@
+/*BANNERS HOME*/
+.banner-home-text-block {
+  position: absolute;
+  top: 110px;
+  left: 0px;
+  width:600px;
+  background-color: #fff;
+  color: #000;
+  padding-left: 20px;
+  opacity: 70%;
+}
+
+
+/* BOXES SEZIONI HOMEPAGE */
+.boxes {
+  position: relative;
+  width: 25%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #0dcaf0;
+}
+
+.boxes:hover .overlay {
+  opacity: 1;
+}
+
+.box-text {
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-decoration: none;
+}
+
+
+
+.boxes,
+.boxes-fluid,
+.boxes-xxl,
+.boxes-xl,
+.boxes-lg,
+.boxes-md,
+.boxes-sm {
+  padding-right: calc(var(--bs-gutter-x) * 0);
+  padding-left: calc(var(--bs-gutter-x) * 0);
+}
+
+
+
+
+/* FORM REGISTRAIZONE */
+.modalform {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+.modalform-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%; 
+}
+
+.closebutton {
+  position: absolute;
+  right: 35px;
+  top: 50px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+
+
+/* COLLABORA */
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/collaborazione.jpg");
+  height: 300px;
+  background-position: 50% 25%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin:30px;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
+}
+
+
+/*HEADER SEZIONE*/
+.header {
+  position: relative;
+  height: auto;
+}
+
+.header-text-block {
+  position: absolute;
+  top: 70px;
+  left: 0px;
+  width:600px;
+  background-color: #fff;
+  color: #000;
+  padding-left: 20px;
+  opacity: 70%;
+}
+
+
+/* ITEM LIST*/
+
+.thumb-icon-light {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  color: #ffffff;
+  font-size: 30px;
+  opacity: 70%;
+}
+.thumb-icon-dark {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  color: #000000;
+  font-size: 30px;
+  opacity: 70%;
+}
+
+/* MODAL BACKGROUND */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*ABSTRACT ITEM*/
+.text-abstract {
+  text-align: center;
+  font-size: 10pt;
+
+}
+
+/*ITEM-TESTO*/
+.item-content {
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+padding: 20px;
+}
+
+.card-text {
+  font-size: 10pt;
+}
+
+/*ZOOM IMMAGINE]*/
+* {box-sizing: border-box;}
+
+.img-picture {
+  width: 100%;
+  height: auto;
+}
+
+.img-zoom-container {
+  position: relative;
+  width: 100%;
+}
+
+.img-zoom-lens {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  /*set the size of the lens:*/
+  width: 70px;
+  height: 70px;
+}
+
+.img-zoom-result {
+  border: 1px solid #d4d4d4;
+  /*set the size of the result div:*/
+  width: 240px;
+  height: 240px;
+}
+
+
+/*FOOTER*/
+ul.no-bullets {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 10pt;
+}
+
+

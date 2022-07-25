@@ -9,63 +9,6 @@
 		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css"/>
 		<script src="https://kit.fontawesome.com/bc3641276e.js" crossorigin="anonymous"></script>
-		<script>
-			function imageZoom(imgID, resultID) {
-			  var img, lens, result, cx, cy;
-			  img = document.getElementById(imgID);
-			  result = document.getElementById(resultID);
-			  /*create lens:*/
-			  lens = document.createElement("DIV");
-			  lens.setAttribute("class", "img-zoom-lens");
-			  /*insert lens:*/
-			  img.parentElement.insertBefore(lens, img);
-			  /*calculate the ratio between result DIV and lens:*/
-			  cx = result.offsetWidth / lens.offsetWidth;
-			  cy = result.offsetHeight / lens.offsetHeight;
-			  /*set background properties for the result DIV:*/
-			  result.style.backgroundImage = "url('" + img.src + "')";
-			  result.style.backgroundSize = (img.width * cx) + "px " + (img.height * cy) + "px";
-			  /*execute a function when someone moves the cursor over the image, or the lens:*/
-			  lens.addEventListener("mousemove", moveLens);
-			  img.addEventListener("mousemove", moveLens);
-			  /*and also for touch screens:*/
-			  lens.addEventListener("touchmove", moveLens);
-			  img.addEventListener("touchmove", moveLens);
-		  	function moveLens(e) {
-	    var pos, x, y;
-	    /*prevent any other actions that may occur when moving over the image:*/
-	    e.preventDefault();
-	    /*get the cursor's x and y positions:*/
-	    pos = getCursorPos(e);
-	    /*calculate the position of the lens:*/
-	    x = pos.x - (lens.offsetWidth / 2);
-	    y = pos.y - (lens.offsetHeight / 2);
-	    /*prevent the lens from being positioned outside the image:*/
-	    if (x > img.width - lens.offsetWidth) {x = img.width - lens.offsetWidth;}
-	    if (x < 0) {x = 0;}
-	    if (y > img.height - lens.offsetHeight) {y = img.height - lens.offsetHeight;}
-	    if (y < 0) {y = 0;}
-	    /*set the position of the lens:*/
-	    lens.style.left = x + "px";
-	    lens.style.top = y + "px";
-	    /*display what the lens "sees":*/
-	    result.style.backgroundPosition = "-" + (x * cx) + "px -" + (y * cy) + "px";
-	 			 }
-	  		function getCursorPos(e) {
-		    var a, x = 0, y = 0;
-		    e = e || window.event;
-		    /*get the x and y positions of the image:*/
-		    a = img.getBoundingClientRect();
-		    /*calculate the cursor's x and y coordinates, relative to the image:*/
-		    x = e.pageX - a.left;
-		    y = e.pageY - a.top;
-		    /*consider any page scrolling:*/
-		    x = x - window.pageXOffset;
-		    y = y - window.pageYOffset;
-		    return {x : x, y : y};
-		  	}
-			}
-		</script>
 	</head>
 	
 	<body>
@@ -141,12 +84,92 @@
 		              	</div>
 	              		<hr>
 	              		<div class="item-content">
-	              		<h4 class="text-center">XXVII</h4>
-	              		<p class="text-center">Ma non voglio che noi entriamo in ragionamenti di fastidio; però ben sarà dir degli abiti del nostro cortegiano; i quali io estimo che, pur che non siano fuor della consuetudine, né contrari alla professione, possano per lo resto tutti star bene, pur che satisfacciano a chi gli porta. Vero è ch'io per me amerei che non fossero estremi in alcuna parte, come talor sol essere il franzese in troppo grandezza e 'l tedesco in troppo piccolezza, ma come sono e l'uno e l'altro corretti e ridutti in meglior forma dagli Italiani. Piacemi ancor sempre che tendano un poco più al grave e riposato, che al vano; però parmi che maggior grazia abbia nei vestimenti il <moda-colore><mark>color nero</mark></moda-colore>, che alcun altro; e se pur non è nero, che almen tenda al <moda-colore><mark>scuro</mark></moda-colore>; e questo intendo del vestir ordinario, perché non è dubbio che sopra l'arme più si convengan <moda-colore><mark>colori aperti ed allegri</mark></moda-colore>, ed ancor gli <moda-occasione><mark>abiti festivi</mark></moda-occasione>, trinzati, pomposi e superbi. Medesimamente nei spettaculi publici di feste, di giochi, di mascare e di tai cose; perché così divisati portan seco una certa vivezza ed alacrità, che in vero ben s'accompagna con l'arme e giochi; ma nel resto vorrei che mostrassino quel riposo che molto serva la nazion spagnola, perché le cose estrinseche spesso fan testimonio delle intrinseche." Allor disse messer Cesare Gonzaga: "Questo a me daria poca noia perché, se un gentilom nelle altre cose vale, il vestire non gli accresce né scema mai riputazione." Rispose messer Federico: "Voi dite il vero. Pur qual è di noi che, vedendo passeggiar un gentilomo con una robba addossoc quartata di diversi colori, o vero con tante <moda-features><mark>stringhette</mark></moda-features> e <moda-features><mark>fettuzze annodate</mark></moda-features> e <moda-features><mark>fregi traversati</mark></moda-features>, non lo tenesse per pazzo o per buffone?" "Né pazzo, né buffone," disse messer Pietro Bembo, "sarebbe costui tenuto da chi fosse qualche tempo vivuto nella Lombardia perché così vanno tutti." "Adunque," rispose la signora Duchessa ridendo, "se così vanno tutti, opporre non se gli dee per vizio, essendo a loro questo abito tanto conveniente e proprio quanto ai Veneziani il portar le <moda-features><mark>maniche a cómeo</mark></moda-features> ed ai Fiorentini il <moda-features><mark>capuzzo</mark></moda-features>." "Non parlo io," disse messer Federico, "più della Lombardia che degli altri lochi, perché d'ogni nazion se ne trovano e di sciocchi e d'avveduti. Ma per dir ciò che mi par d'importanzia nel vestire, voglio che 'l nostro cortegiano in tutto l'abito sia <moda-features><mark>pulito</mark></moda-features> e <moda-features><mark>delicato</mark></moda-features> ed abbia una certa conformità di <moda-features><mark>modesta attillatura</mark></moda-features>, ma non però di <moda-features><mark>manera feminile</mark></moda-features> o vana, né più in una cosa che nell'altra, come molti ne vedemo, che pongon tanto studio nella <moda-adjunct><mark>capigliara</mark></moda-adjunct>, che si scordano il resto; altri fan professione de denti, altri di <moda-adjunct><mark>barba</mark></moda-adjunct>, altri di <moda-adjunct><mark>borzachini</mark></moda-adjunct>, altri di <moda-adjunct><mark>berrette</mark></moda-adjunct>, altri di <moda-adjunct><mark>cuffie</mark></moda-adjunct>; e così intervien che quelle poche cose più culte paiono lor prestate, e tutte l'altre che sono sciocchissime si conoscono per le loro. E questo tal costume voglio che fugga il nostro cortegiano, per mio consiglio; aggiungendovi ancor che debba fra se stesso deliberar ciò che vol parere e di quella sorte che desidera esser estimato, della medesima vestirsi, e far che gli abiti lo aiutino ad esser tenuto per tale ancor da quelli che non l'odono parlare, né veggono far operazione alcuna."
-	              		</p>
+	              			<h4 class="text-center">XXVII</h4>
+	              			<p class="text-center">Ma non voglio che noi entriamo in ragionamenti di fastidio; però ben sarà dir degli abiti del nostro cortegiano; i quali io estimo che, pur che non siano fuor della consuetudine, né contrari alla professione, possano per lo resto tutti star bene, pur che satisfacciano a chi gli porta. Vero è ch'io per me amerei che non fossero estremi in alcuna parte, come talor sol essere il franzese in troppo grandezza e 'l tedesco in troppo piccolezza, ma come sono e l'uno e l'altro corretti e ridutti in meglior forma dagli Italiani. Piacemi ancor sempre che tendano un poco più al grave e riposato, che al vano; però parmi che maggior grazia abbia nei vestimenti il <moda-colore><mark>color nero</mark></moda-colore>, che alcun altro; e se pur non è nero, che almen tenda al <moda-colore><mark>scuro</mark></moda-colore>; e questo intendo del vestir ordinario, perché non è dubbio che sopra l'arme più si convengan <moda-colore><mark>colori aperti ed allegri</mark></moda-colore>, ed ancor gli <moda-occasione><mark>abiti festivi</mark></moda-occasione>, trinzati, pomposi e superbi. Medesimamente nei spettaculi publici di feste, di giochi, di mascare e di tai cose; perché così divisati portan seco una certa vivezza ed alacrità, che in vero ben s'accompagna con l'arme e giochi; ma nel resto vorrei che mostrassino quel riposo che molto serva la nazion spagnola, perché le cose estrinseche spesso fan testimonio delle intrinseche." Allor disse messer Cesare Gonzaga: "Questo a me daria poca noia perché, se un gentilom nelle altre cose vale, il vestire non gli accresce né scema mai riputazione." Rispose messer Federico: "Voi dite il vero. Pur qual è di noi che, vedendo passeggiar un gentilomo con una robba addossoc quartata di diversi colori, o vero con tante <moda-features><mark>stringhette</mark></moda-features> e <moda-features><mark>fettuzze annodate</mark></moda-features> e <moda-features><mark>fregi traversati</mark></moda-features>, non lo tenesse per pazzo o per buffone?" "Né pazzo, né buffone," disse messer Pietro Bembo, "sarebbe costui tenuto da chi fosse qualche tempo vivuto nella Lombardia perché così vanno tutti." "Adunque," rispose la signora Duchessa ridendo, "se così vanno tutti, opporre non se gli dee per vizio, essendo a loro questo abito tanto conveniente e proprio quanto ai Veneziani il portar le <moda-features><mark>maniche a cómeo</mark></moda-features> ed ai Fiorentini il <moda-features><mark>capuzzo</mark></moda-features>." "Non parlo io," disse messer Federico, "più della Lombardia che degli altri lochi, perché d'ogni nazion se ne trovano e di sciocchi e d'avveduti. Ma per dir ciò che mi par d'importanzia nel vestire, voglio che 'l nostro cortegiano in tutto l'abito sia <moda-features><mark>pulito</mark></moda-features> e <moda-features><mark>delicato</mark></moda-features> ed abbia una certa conformità di <moda-features><mark>modesta attillatura</mark></moda-features>, ma non però di <moda-features><mark>manera feminile</mark></moda-features> o vana, né più in una cosa che nell'altra, come molti ne vedemo, che pongon tanto studio nella <moda-adjunct><mark>capigliara</mark></moda-adjunct>, che si scordano il resto; altri fan professione de denti, altri di <moda-adjunct><mark>barba</mark></moda-adjunct>, altri di <moda-adjunct><mark>borzachini</mark></moda-adjunct>, altri di <moda-adjunct><mark>berrette</mark></moda-adjunct>, altri di <moda-adjunct><mark>cuffie</mark></moda-adjunct>; e così intervien che quelle poche cose più culte paiono lor prestate, e tutte l'altre che sono sciocchissime si conoscono per le loro. E questo tal costume voglio che fugga il nostro cortegiano, per mio consiglio; aggiungendovi ancor che debba fra se stesso deliberar ciò che vol parere e di quella sorte che desidera esser estimato, della medesima vestirsi, e far che gli abiti lo aiutino ad esser tenuto per tale ancor da quelli che non l'odono parlare, né veggono far operazione alcuna."</p>
+	              		</div>
+	              		<br></br>
+	              		<div class="container-fluid">
+							<ul class="nav nav-tabs">
+						    	<li class="nav-item">
+						     		 <a class="nav-link active bg-warning">Metadati</a>
+						    	</li>
+						  	</ul> 
+						</div>
+	              		<div class="row">
+	              			<table class="table">
+                 		<thead>
+                		</thead>
+                 		<tbody>
+	                    <tr>
+	                       <th scope="row"></th>
+	                       <td>Titolo: </td>
+	                       <td><a href="hhttps://lccn.loc.gov/nr2002037051" title="LC-authority"><b>Il Libro del Cortegiano [Libro II, cap XXVII]</b></a></td>
+	                       <td></td>
+	                    </tr>
+	                    <tr>
+	                       <th scope="row"></th>
+	                       <td>Autore:</td>
+	                       <td><a href="https://lccn.loc.gov/n50052782" title="LC-authority"><b>Baldassarre Castiglione</b></a></td>
+	                       <td><a href="https://www.treccani.it/enciclopedia/baldassarre-castiglione_%28Dizionario-Biografico%29/" title="Dizionario Bibliografico degli Italiani">DBI</a></td>
+	                    </tr>
+	                    <tr>
+	                       <th scope="row"></th>
+	                       <td>Data ed. princeps:</td>
+	                       <td><b><a href="tempi.htm">1528</a></b></td>
+	                    </tr>
+	                    <tr>
+	                       <th scope="row"></th>
+	                       <td>Data ed. item:</td>
+	                       <td><b>1981</b></td>
+	                    </tr>
+	                    <tr>
+	                       <th scope="row"></th>
+	                       <td>Luogo ed. princeps:</td>
+	                       <td><a href="https://www.geonames.org/3164603/venice.html" title="GeoNames-authority"><b>Italia - Venezia</b></a></td>
+	                    </tr>
+	                    <tr>
+	                       <th scope="row"></th>
+	                       <td>Genere item:</td>
+	                       <td><b><a href="#">Menswear</a></b></td>
+	                    </tr>
+	                    <tr>
+	                       <th scope="row"></th>
+	                       <td>Categoria item:</td>
+	                       <td><b><a href="abiti.htm">Abiti</a></b> - <b><a href="#">Accessori</a></b></td>
+	                       <td></td>
+	                   </tr>
+	                   <tr>
+	                       <th scope="row"></th>
+	                       <td>Tipologia item:</td>
+	                       <td><b>Testo a stampa</b></td>
+	                       <td></td>
+	                  </tr>
+	                  <tr>
+	                       <th scope="row"></th>
+	                       <td>ISBN:</td>
+	                       <td><b>978-88-11-36260-9</b></td>
+	                       <td></td>
+	                 </tr>
+	                 <tr>
+	                       <th scope="row"></th>
+	                       <td>Editore ed. item:</td>
+	                       <td><b>Garzanti</b></td>
+	                </tr>
+	                <tr>
+	                       <th scope="row"></th>
+	                       <td>Editore ed. princeps:</td>
+	                       <td><b>Aldo Manuzio</b></td>
+	                </tr>
+	                <tr>
+	                       <th scope="row"></th>
+	                       <td><span class="badge bg-danger" style="margin-right:20px;"><a href="xml/XML-DC-cortegiano.xml" class="text-light">File XML/DC</a></span>
+	                       <span class="badge bg-success" style="margin-right:20px;"><a href="xml/TEI.xml" class="text-light">File TEI</a></span></td>
+	                </tr>
+                </tbody>
+              </table>
 	              		</div>	
-	           			</div>
-	           			<div class="col-1">
+	           		</div>
+	           		<div class="col-1">
 	              	</div>
 					  			<div class="col-2">
 										<div style="width:100%" class="badge bg-warning">
@@ -156,87 +179,88 @@
 										<div style="width:100%">
 											<ul class="no-bullets">
 										  	<li><a href="item-bronzino.htm"><img src="images/thumb-gentiluomo-bronzino.jpg" style="width:100%" class="img-thumbnail"></a></li>
-										    <li><a href="#"><img src="images/thumb-habiti-vecellio.jpg" style="width:100%" class="img-thumbnail"></a></li>
+										    <!--<li><a href="#"><img src="images/thumb-habiti-vecellio.jpg" style="width:100%" class="img-thumbnail"></a></li>-->
 										    <li><a href="#"><img src="images/thumb-abito-maschile.jpg" style="width:100%" class="img-thumbnail"></a></li>
 										    <li><a href="#"><img src="images/thumb-video-bookoffashion.jpg" style="width:100%" class="img-thumbnail"></a></li>
 										  </ul>  
 										</div>
+										<iframe style='width: 100%; height: 30%;' src='https://voyant-tools.org/tool/Cirrus/?visible=125&corpus=dc7153340583ac707161624d814d1942'></iframe>
 									</div>
 	            </div>
 						</div>
 		
 					<br></br>
 				<div class="row">
-					<table class="table">
-                 <thead>
-                 </thead>
-                 <tbody>
-                    <tr>
-                       <th scope="row"></th>
-                       <td>Titolo: </td>
-                       <td><b>Il Libro del Cortegiano [Libro II, cap XXVII]</b></td>
-                       <td></td>
-                    </tr>
-                    <tr>
-                       <th scope="row"></th>
-                       <td>Autore:</td>
-                       <td><a href="#"><b>Baldassarre Castiglione</b></a></td>
-                    </tr>
-                    <tr>
-                       <th scope="row"></th>
-                       <td>Data ed. princeps:</td>
-                       <td><b><a href="tempi.htm">1528</a></b></td>
-                    </tr>
-                    <tr>
-                       <th scope="row"></th>
-                       <td>Data ed. item:</td>
-                       <td><b>1981</b></td>
-                    </tr>
-                    <tr>
-                       <th scope="row"></th>
-                       <td>Luogo ed. princeps:</td>
-                       <td><a href="#"><b>Italia - Venezia</b></a></td>
-                    </tr>
-                    <tr>
-                       <th scope="row"></th>
-                       <td>Genere item:</td>
-                       <td><b><a href="#">Menswear</a></b></td>
-                    </tr>
-                    <tr>
-                       <th scope="row"></th>
-                       <td>Categoria item:</td>
-                       <td><b><a href="abiti.htm">Abiti</a></b></td>
-                       <td></td>
-                   </tr>
-                   <tr>
-                       <th scope="row"></th>
-                       <td>Tipologia item:</td>
-                       <td><b>Materiale a stampa</b></td>
-                       <td></td>
-                  </tr>
-                  <tr>
-                       <th scope="row"></th>
-                       <td>ISBN:</td>
-                       <td><b>978-88-11-36260-9</b></td>
-                       <td></td>
-                 </tr>
-                 <tr>
-                       <th scope="row"></th>
-                       <td>Editore ed. item:</td>
-                       <td><b>Garzanti</b></td>
-                </tr>
-                <tr>
-                       <th scope="row"></th>
-                       <td>Editore ed. princeps:</td>
-                       <td><b>Aldo Manuzio</b></td>
-                </tr>
-                <tr>
-                       <th scope="row"></th>
-                       <td><span class="badge bg-danger" style="margin-right:20px;"><a href="xml/XML-DC-cortegiano.xml" class="text-light">File XML/DC</a></span>
-                       <span class="badge bg-success" style="margin-right:20px;"><a href="xml/TEI.xml" class="text-light">File TEI</a></span></td>
-                </tr>
+					<!--<table class="table">
+                 		<thead>
+                		</thead>
+                 		<tbody>
+	                    <tr>
+	                       <th scope="row"></th>
+	                       <td>Titolo: </td>
+	                       <td><b>Il Libro del Cortegiano [Libro II, cap XXVII]</b></td>
+	                       <td></td>
+	                    </tr>
+	                    <tr>
+	                       <th scope="row"></th>
+	                       <td>Autore:</td>
+	                       <td><a href="http://viaf.org/viaf/39446776"><b>Baldassarre Castiglione</b></a></td>
+	                    </tr>
+	                    <tr>
+	                       <th scope="row"></th>
+	                       <td>Data ed. princeps:</td>
+	                       <td><b><a href="tempi.htm">1528</a></b></td>
+	                    </tr>
+	                    <tr>
+	                       <th scope="row"></th>
+	                       <td>Data ed. item:</td>
+	                       <td><b>1981</b></td>
+	                    </tr>
+	                    <tr>
+	                       <th scope="row"></th>
+	                       <td>Luogo ed. princeps:</td>
+	                       <td><a href="https://www.geonames.org/3164603/venice.html"><b>Italia - Venezia</b></a></td>
+	                    </tr>
+	                    <tr>
+	                       <th scope="row"></th>
+	                       <td>Genere item:</td>
+	                       <td><b><a href="#">Menswear</a></b></td>
+	                    </tr>
+	                    <tr>
+	                       <th scope="row"></th>
+	                       <td>Categoria item:</td>
+	                       <td><b><a href="abiti.htm">Abiti</a></b> - <b><a href="#">Accessori</a></b></td>
+	                       <td></td>
+	                   </tr>
+	                   <tr>
+	                       <th scope="row"></th>
+	                       <td>Tipologia item:</td>
+	                       <td><b>Materiale a stampa</b></td>
+	                       <td></td>
+	                  </tr>
+	                  <tr>
+	                       <th scope="row"></th>
+	                       <td>ISBN:</td>
+	                       <td><b>978-88-11-36260-9</b></td>
+	                       <td></td>
+	                 </tr>
+	                 <tr>
+	                       <th scope="row"></th>
+	                       <td>Editore ed. item:</td>
+	                       <td><b>Garzanti</b></td>
+	                </tr>
+	                <tr>
+	                       <th scope="row"></th>
+	                       <td>Editore ed. princeps:</td>
+	                       <td><b>Aldo Manuzio</b></td>
+	                </tr>
+	                <tr>
+	                       <th scope="row"></th>
+	                       <td><span class="badge bg-danger" style="margin-right:20px;"><a href="xml/XML-DC-cortegiano.xml" class="text-light">File XML/DC</a></span>
+	                       <span class="badge bg-success" style="margin-right:20px;"><a href="xml/TEI.xml" class="text-light">File TEI</a></span></td>
+	                </tr>
                 </tbody>
-              </table>
+              </table>-->
 	         </div>
 	       </br>
 
@@ -273,50 +297,6 @@
 			</div>	
    		</footer>
 
-<script>
-function openModal() {
-  document.getElementById("myModal").style.display = "block";
-}
-
-function closeModal() {
-  document.getElementById("myModal").style.display = "none";
-}
-
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
-</script>
-
-<script>
-imageZoom("myimage", "myresult"); 
-</script>
-
 		<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
-
 	</body>
 </html>
