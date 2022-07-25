@@ -149,7 +149,7 @@
 /*HEADER SEZIONE*/
 .header {
   position: relative;
-  height: 150px;
+  height: auto;
 }
 
 .header-text-block {
