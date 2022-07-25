@@ -226,13 +226,13 @@ padding: 20px;
 * {box-sizing: border-box;}
 
 .img-picture {
-  width: 500px;
+  width: 100%;
   height: auto;
 }
 
 .img-zoom-container {
   position: relative;
-  width: 500px;
+  width: 100%;
 }
 
 .img-zoom-lens {
